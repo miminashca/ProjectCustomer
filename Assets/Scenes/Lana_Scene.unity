@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 25001390}
   - component: {fileID: 25001389}
   - component: {fileID: 25001388}
-  - component: {fileID: 25001387}
   - component: {fileID: 25001393}
-  m_Layer: 0
+  - component: {fileID: 25001387}
+  - component: {fileID: 25001394}
+  m_Layer: 3
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1372944681}
   m_OriginBaseGameObject: {fileID: 25001386}
   m_CameraFloorOffsetObject: {fileID: 655632857}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &25001392
 Transform:
@@ -316,6 +317,21 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &25001394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25001386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 25001388}
+  m_MinHeight: 0.5
+  m_MaxHeight: 3
 --- !u!1 &376230436
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +449,7 @@ GameObject:
   - component: {fileID: 545998731}
   - component: {fileID: 545998730}
   - component: {fileID: 545998729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 655632858}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +590,7 @@ GameObject:
   - component: {fileID: 723035331}
   - component: {fileID: 723035330}
   - component: {fileID: 723035329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1481,7 @@ GameObject:
   - component: {fileID: 759433779}
   - component: {fileID: 759433778}
   - component: {fileID: 759433777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,74 +1574,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759433775}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &793593698
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.213479
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.662511
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c512798e7ee6b43d4876d7ca6e0787e2,
-        type: 3}
-      propertyPath: m_Name
-      value: BedroomBlockout
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c512798e7ee6b43d4876d7ca6e0787e2, type: 3}
 --- !u!1 &854262496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,7 +1693,7 @@ GameObject:
   - component: {fileID: 1195294547}
   - component: {fileID: 1195294546}
   - component: {fileID: 1195294545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2466,7 +2414,7 @@ GameObject:
   - component: {fileID: 1372944680}
   - component: {fileID: 1372944679}
   - component: {fileID: 1372944678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3163,4 +3111,3 @@ SceneRoots:
   - {fileID: 1585960357}
   - {fileID: 1930698775}
   - {fileID: 854262500}
-  - {fileID: 793593698}
