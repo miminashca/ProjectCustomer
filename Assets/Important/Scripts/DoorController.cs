@@ -9,6 +9,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Animator door = null;
     [SerializeField] private bool doorClosed = true;
     private bool doorOpen = false;
+    private bool doorIsActive = false;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class DoorController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && doorIsActive)
         {
             if (doorOpen)
             {
@@ -31,6 +32,23 @@ public class DoorController : MonoBehaviour
                 doorOpen = true;
                 doorClosed = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PlayerHand"))
+        {
+            Debug.Log("active");
+            doorIsActive = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("PlayerHand"))
+        {
+            Debug.Log("not active");
+            doorIsActive = false;
         }
     }
 }
