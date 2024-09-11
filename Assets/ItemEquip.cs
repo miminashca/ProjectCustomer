@@ -22,7 +22,7 @@ public class ItemEquip : MonoBehaviour
     {
         if(FireExOn)
         {
-            this.transform.position = new Vector3(PlayHead.transform.position.x, PlayHead.transform.position.y + 2, PlayHead.transform.position.y);
+            this.transform.position = new Vector3(PlayHead.transform.position.x, PlayHead.transform.position.y + .5f, PlayHead.transform.position.z);
             this.transform.rotation = PlayHead.transform.rotation;
         }
     }
