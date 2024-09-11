@@ -18,37 +18,37 @@ public class DoorController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && doorIsActive)
-        {
-            if (doorOpen)
-            {
-                door.Play("DoorClose");
-                doorOpen = false;
-                doorClosed = true;
-            }
-            if (doorClosed)
-            {
-                door.Play("DoorOpen");
-                doorOpen = true;
-                doorClosed = false;
-            }
-        }
+        // if (Input.GetKeyDown(KeyCode.X) && doorIsActive)
+        // {
+        //     if (doorOpen)
+        //     {
+        //         door.Play("DoorClose");
+        //         doorOpen = false;
+        //         doorClosed = true;
+        //     }
+        //     if (doorClosed)
+        //     {
+        //         door.Play("DoorOpen");
+        //         doorOpen = true;
+        //         doorClosed = false;
+        //     }
+        // }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("PlayerHand"))
-        {
-            Debug.Log("active");
-            doorIsActive = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("PlayerHand"))
-        {
-            Debug.Log("not active");
-            doorIsActive = false;
-        }
-    }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.CompareTag("PlayerHand"))
+    //     {
+    //         Debug.Log("active");
+    //         doorIsActive = true;
+    //     }
+    // }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.gameObject.CompareTag("PlayerHand"))
+    //     {
+    //         Debug.Log("not active");
+    //         doorIsActive = false;
+    //     }
+    // }
 }
