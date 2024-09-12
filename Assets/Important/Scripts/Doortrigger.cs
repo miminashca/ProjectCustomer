@@ -1,40 +1,19 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Doortrigger : MonoBehaviour
 {
     [SerializeField] private Transform doorPivot = null;
     [SerializeField] private Animator door = null;
-    private bool doorIsActive = false;
     
     [SerializeField] private bool doorClosed = true;
-
-    private void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PlayerHand"))
         {
-            if (!doorIsActive)
-            {
-                doorIsActive = true;
-            }
-            else
-            {
-                doorIsActive = false;
-            }
+            // Debug.Log("active");
+            // Debug.Log(doorPivot.rotation.eulerAngles.y);
             
-            if (doorClosed && doorIsActive)
+            if (doorClosed && doorPivot.rotation.eulerAngles.y == 0f)
             {
                 if (gameObject.CompareTag("LeftDoorTrigger"))
                 {
@@ -47,7 +26,7 @@ public class Doortrigger : MonoBehaviour
 
                 doorClosed = false;
             }
-            else if (!doorClosed && doorIsActive)
+            else if (!doorClosed && (doorPivot.rotation.eulerAngles.y == 90f || doorPivot.rotation.eulerAngles.y == 270f))
             {
                 if (gameObject.CompareTag("LeftDoorTrigger"))
                 {
@@ -60,14 +39,6 @@ public class Doortrigger : MonoBehaviour
 
                 doorClosed = true;
             }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("PlayerHand"))
-        {
-            doorIsActive = false;
         }
     }
 }
