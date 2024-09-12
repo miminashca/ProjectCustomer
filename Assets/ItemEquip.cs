@@ -22,8 +22,8 @@ public class ItemEquip : MonoBehaviour
     {
         if(FireExOn)
         {
-            this.transform.position = new Vector3(PlayHead.transform.position.x, PlayHead.transform.position.y + .5f, PlayHead.transform.position.z);
-            this.transform.rotation = PlayHead.transform.rotation;
+            this.transform.position = new Vector3(PlayHead.transform.position.x + .2f, PlayHead.transform.position.y + 1f, PlayHead.transform.position.z);
+            
         }
     }
     private void OnTriggerEnter(Collider other)
