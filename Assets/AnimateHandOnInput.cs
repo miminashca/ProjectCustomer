@@ -18,11 +18,13 @@ public class AnimateHandOnInput : MonoBehaviour
     
     void Update()
     {
+        float gripvalue = gripAnim.action.ReadValue<float>();
+        handAnimator.SetFloat("Grip", gripvalue);
+
         float triggervalue = pinchAnim.action.ReadValue < float>();
         handAnimator.SetFloat("Trigger", triggervalue);
        
-        float gripvalue = gripAnim.action.ReadValue < float>();
-        handAnimator.SetFloat("Grip", gripvalue);
+        
 
        
     }
