@@ -7,6 +7,9 @@ TagManager:
   - PlayerHand
   - LeftDoorTrigger
   - RightDoorTrigger
+  - Mask
+  - FireEx
+  - PlayerHead
   layers:
   - Default
   - TransparentFX
