@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 7132154701624163997}
   m_Layer: 0
   m_Name: FireExtinguiser
-  m_TagString: FireEx
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

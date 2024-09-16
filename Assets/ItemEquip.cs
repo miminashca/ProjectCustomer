@@ -11,13 +11,6 @@ public class ItemEquip : MonoBehaviour
 
     [SerializeField] GameObject currentItem;
     [SerializeField] GameObject PlayHead;
-    void Start()
-    {
-        
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(FireExOn)
@@ -28,12 +21,12 @@ public class ItemEquip : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerHead") && this.CompareTag("Mask"))
+        if (other.CompareTag("PlayerHead") && this.name == "N95Mask")
         {
             currentItem.SetActive(false);
             maskOn = true;
         }
-        if (other.CompareTag("PlayerHead") && this.CompareTag("FireEx"))
+        if (other.CompareTag("PlayerHead") && this.name == "FireEx")
         {
             FireExOn = true;
             PlayHead = other.gameObject;
