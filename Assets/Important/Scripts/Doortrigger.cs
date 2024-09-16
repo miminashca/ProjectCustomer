@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Doortrigger : MonoBehaviour
@@ -10,8 +11,8 @@ public class Doortrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerHand"))
         {
-            // Debug.Log("active");
-            // Debug.Log(doorPivot.rotation.eulerAngles.y);
+            Debug.Log("active");
+            Debug.Log(doorPivot.localRotation.eulerAngles.y);
             
             if (doorClosed && doorPivot.rotation.eulerAngles.y == 0f)
             {
