@@ -8,10 +8,20 @@ public class ButtonHandler : MonoBehaviour
     private bool buttonHit;
     private GameObject button;
 
-    public GameObject plane;
+    public GameObject Interactable;
 
     private float buttonHitResetTime = 0.5f;
     private float canHitAgain;
+
+    [SerializeField] bool bath;
+    [SerializeField] bool sink;
+    [SerializeField] bool valve;
+    [SerializeField] bool lightswitch;
+
+    bool bathfull;
+    bool sinkfull;
+    bool valveOn;
+    bool lightsOn;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +37,47 @@ public class ButtonHandler : MonoBehaviour
 
             buttonOn = !buttonOn;
 
-            if(buttonOn)
+            if (buttonOn)
             {
-                plane.SetActive(true);
+                if (bath)
+                {
+                    bathfull = true;
+                }
+                if (sink)
+                {
+                    sinkfull = true;
+                }
+                if (lightswitch)
+                {
+                    lightsOn = true;
+                }
+                if (valve)
+                {
+                    valveOn = true;
+                }
+                Interactable.SetActive(true);
             }
-            else plane.SetActive(false);
+            else
+            {
+                Interactable.SetActive(false);
+
+                if (bath)
+                {
+                    bathfull = false;
+                }
+                if (sink)
+                {
+                    sinkfull = false;
+                }
+                if (lightswitch)
+                {
+                    lightsOn = false;
+                }
+                if (valve)
+                {
+                    valveOn = false;
+                }
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
