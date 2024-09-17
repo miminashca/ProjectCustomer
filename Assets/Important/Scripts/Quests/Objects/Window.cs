@@ -1,24 +1,24 @@
 using System;
 using UnityEngine;
 
-public class Window : MonoBehaviour
+public class Window : QuestObject
 {
-    private QuestManager.TargetObject questObject = QuestManager.TargetObject.Window;
-    private int questID;
-    
     private bool windowIsActive = true;
-    
-    public static event Action OnQuestCompleted;
-    private void Start()
+    public static event Action OnWindowCompleted;
+    private Animator animator;
+
+    private void Awake()
     {
-        questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        questObject = QuestManager.TargetObject.Window;
+        animator = GetComponent<Animator>();
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && windowIsActive)
         {
             QuestManager.questManager.AddQuestProgress(questID, 1);
+            animator.Play("WindowClose");
             windowIsActive = false;
         }
     }
@@ -27,7 +27,7 @@ public class Window : MonoBehaviour
     {
         if (QuestManager.questManager.CheckCompletedQuest(questID))
         {
-            OnQuestCompleted?.Invoke();
+            OnWindowCompleted?.Invoke();
             QuestManager.questManager.CloseQuest(questID);
             //Debug.Log(QuestManager.questManager.questList[questID].progress);
         }
