@@ -14,10 +14,11 @@ public class Quest
         AVAILABLE,
         ACCEPTED,
         COMPLETED,
-        //DONE
+        DONE
     };
 
     public string title;           //title for the quest
+    public QuestManager.TargetObject questObject;
     [NonSerialized] public int id; //ID number of the quest
     public QuestProgress progress; //state of the current quest (enum)
     

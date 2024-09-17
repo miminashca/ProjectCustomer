@@ -11,10 +11,22 @@ public class QuestManager : MonoBehaviour
 {
     public static QuestManager questManager;
     
-    public static event Action OnQuestCompleted; // ???
-    
     [SerializedDictionary("QuestID", "Quest")]
     public SerializedDictionary<int, Quest> questList = new SerializedDictionary<int, Quest>(); //MASTER QUEST LIST
+    
+    public enum TargetObject
+    {
+        Sink,
+        Couch,
+        Window,
+        Electricity,
+        Fuse,
+        Gas,
+        Mask,
+        Airconditioning,
+        Bath,
+        Bathroom
+    };
     
     private void Awake()
     {
@@ -90,8 +102,28 @@ public class QuestManager : MonoBehaviour
         {
             questList[questID].progress = Quest.QuestProgress.COMPLETED;
             Debug.Log("completed quest: " + questID + ", " + questList[questID].title);
-            OnQuestCompleted?.Invoke();
         }
     }
+    public void CloseQuest(int questID)
+    {
+        if (CheckCompletedQuest(questID))
+        {
+            questList[questID].progress = Quest.QuestProgress.DONE;
+        }
+    } //Close the quest after qiving XP reward, (call from quest object scripts)
+
+
+    public int FindIDbyTargetObject(TargetObject targetObject)
+    {
+        foreach (KeyValuePair<int, Quest> entry in questList)
+        {
+            if (entry.Value.questObject == targetObject)
+            {
+                return entry.Key;
+            }
+        }
+
+        return -1;
+    } //Get the ID of a certain quest, by the target object (call from quest object scripts)
     
 }
