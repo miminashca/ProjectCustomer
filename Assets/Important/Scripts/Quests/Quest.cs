@@ -14,7 +14,8 @@ public class Quest
         AVAILABLE,
         ACCEPTED,
         COMPLETED,
-        DONE
+        UNCOMPLETED,
+        //DONE
     };
 
     public string title;           //title for the quest

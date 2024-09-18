@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Doortrigger : MonoBehaviour
+public class DoorTrigger : MonoBehaviour
 {
     [SerializeField] private Transform doorPivot = null;
     [SerializeField] private Animator door = null;

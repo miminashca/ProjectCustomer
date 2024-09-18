@@ -13,6 +13,11 @@ public class Window : QuestObject
         animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && windowIsActive)
@@ -28,7 +33,6 @@ public class Window : QuestObject
         if (QuestManager.questManager.CheckCompletedQuest(questID))
         {
             OnWindowCompleted?.Invoke();
-            QuestManager.questManager.CloseQuest(questID);
             //Debug.Log(QuestManager.questManager.questList[questID].progress);
         }
     }
