@@ -16,16 +16,16 @@ public class QuestManager : MonoBehaviour
     
     public enum TargetObject
     {
-        Sink,
-        Couch,
+        Inflammable,
         Window,
-        Electricity,
-        Fuse,
-        Gas,
-        Mask,
         Airconditioning,
-        Bath,
-        Bathroom
+        Light,
+        Mask,
+        FireExtinguisher,
+        RiseWater,
+        Bathroom,
+        Gas,
+        Electricity
     };
 
     [NonSerialized] public int successRate = 0;

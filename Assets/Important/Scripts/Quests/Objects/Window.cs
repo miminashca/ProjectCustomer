@@ -4,7 +4,7 @@ using UnityEngine;
 public class Window : QuestObject
 {
     private bool windowIsActive = true;
-    public static event Action OnWindowCompleted;
+    //public static event Action OnWindowCompleted;
     private Animator animator;
     
     private void Start()
@@ -25,12 +25,12 @@ public class Window : QuestObject
         }
     }
 
-    private void Update()
-    {
-        if (QuestManager.questManager.CheckCompletedQuest(questID))
-        {
-            OnWindowCompleted?.Invoke();
-            //Debug.Log(QuestManager.questManager.questList[questID].progress);
-        }
-    }
+    // private void Update()
+    // {
+    //     if (QuestManager.questManager.CheckCompletedQuest(questID))
+    //     {
+    //         OnWindowCompleted?.Invoke();
+    //         //Debug.Log(QuestManager.questManager.questList[questID].progress);
+    //     }
+    // }
 }

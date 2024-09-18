@@ -10,7 +10,7 @@ public class UiManager : MonoBehaviour
 
     private void Start()
     {
-        Window.OnWindowCompleted += EnableImage;
+       // Window.OnWindowCompleted += EnableImage;
     }
 
     private void EnableImage()

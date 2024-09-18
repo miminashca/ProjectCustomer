@@ -7,6 +7,10 @@ TagManager:
   - PlayerHand
   - LeftDoorTrigger
   - RightDoorTrigger
+  - Bed
+  - Couch
+  - Sink
+  - Bath
   layers:
   - Default
   - TransparentFX
