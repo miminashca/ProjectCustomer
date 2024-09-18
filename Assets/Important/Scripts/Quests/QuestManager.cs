@@ -27,6 +27,8 @@ public class QuestManager : MonoBehaviour
         Bath,
         Bathroom
     };
+
+    [NonSerialized] public int successRate = 0;
     
     private void Awake()
     {
@@ -120,7 +122,8 @@ public class QuestManager : MonoBehaviour
         if (CheckAvailableQuest(questID) || CheckAcceptedQuest(questID))
         {
             questList[questID].progress = Quest.QuestProgress.COMPLETED;
-            Debug.Log("completed quest: " + questID + ", " + questList[questID].title);
+            UpdateSuccessRate(questID, questList[questID].successRateReward);
+            Debug.Log("completed quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
         }
     }
     private void UncompleteQuest(int questID)
@@ -128,8 +131,9 @@ public class QuestManager : MonoBehaviour
         if (CheckCompletedQuest(questID))
         {
             questList[questID].progress = Quest.QuestProgress.UNCOMPLETED;
+            UpdateSuccessRate(questID, -questList[questID].successRateReward);
             questList[questID].progress = Quest.QuestProgress.AVAILABLE;
-            Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title);
+            Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
         }
     }
     // public void CloseQuest(int questID)
@@ -139,6 +143,12 @@ public class QuestManager : MonoBehaviour
     //         questList[questID].progress = Quest.QuestProgress.DONE;
     //     }
     //} //Close the quest after qiving XP reward, (call from quest object scripts)
+
+
+    private void UpdateSuccessRate(int questID, int successRateReward)
+    {
+        successRate += successRateReward;
+    }
     
     
     public int FindIDbyTargetObject(TargetObject targetObject)

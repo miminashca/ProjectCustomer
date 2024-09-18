@@ -9,15 +9,13 @@ public class Airconditioner : QuestObject
     
     public static event Action OnConditionerCompleted;
     public static event Action OnConditionerUncompleted;
-    private void Awake()
-    {
-        questObject = QuestManager.TargetObject.Airconditioning;
-        onOffSwitch.questObject = questObject;
-    }
+   
     private void Start()
     {
-        Switch.OnConditionerActivate += AddProgress;
+        questObject = QuestManager.TargetObject.Airconditioning;
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        onOffSwitch.questObject = questObject;
+        Switch.OnConditionerActivate += AddProgress;
     }
 
     private void AddProgress()

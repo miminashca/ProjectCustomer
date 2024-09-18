@@ -6,16 +6,13 @@ public class Window : QuestObject
     private bool windowIsActive = true;
     public static event Action OnWindowCompleted;
     private Animator animator;
-
-    private void Awake()
-    {
-        questObject = QuestManager.TargetObject.Window;
-        animator = GetComponent<Animator>();
-    }
-
+    
     private void Start()
     {
+        questObject = QuestManager.TargetObject.Window;
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
