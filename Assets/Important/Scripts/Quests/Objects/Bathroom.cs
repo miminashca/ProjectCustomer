@@ -14,7 +14,7 @@ public class Bathroom : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) isInBathroom = !isInBathroom;
+        if (other.gameObject.CompareTag("PlayerHead")) isInBathroom = !isInBathroom;
         //Debug.Log(isInBathroom);
         
         if (isInBathroom)

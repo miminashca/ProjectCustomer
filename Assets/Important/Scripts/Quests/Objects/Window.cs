@@ -17,7 +17,7 @@ public class Window : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && windowIsActive)
+        if (other.gameObject.tag == "PlayerHand" && windowIsActive)
         {
             QuestManager.questManager.AddQuestProgress(questID, 1);
             animator.Play("WindowClose");

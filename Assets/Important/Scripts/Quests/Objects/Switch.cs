@@ -16,7 +16,7 @@ public class Switch : MonoBehaviour
    public static event Action OnLightActivate;
    private void OnTriggerEnter(Collider other)
    {
-      if (other.gameObject.tag == "Player" && timer>=treshold)
+      if (other.gameObject.tag == "PlayerHand" && timer>=treshold)
       {
          isOn = !isOn;
          // Debug.Log(isOn);

@@ -13,7 +13,7 @@ public class Equip : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("PlayerHead"))
         {
             QuestManager.questManager.AddQuestProgress(questID, 1);
             Destroy(gameObject);

@@ -15,7 +15,7 @@ public class RiseWater : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && isActive)
+        if (other.gameObject.CompareTag("PlayerHand") && isActive)
         {
             if (gameObject.CompareTag("Sink"))
             {

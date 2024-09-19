@@ -14,7 +14,7 @@ public class FuseBox : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && fuseDoor.isOpen)
+        if (other.gameObject.CompareTag("PlayerHand") && fuseDoor.isOpen)
         {
             isOn = !isOn;
             if(!isOn) QuestManager.questManager.AddQuestProgress(questID, 1);

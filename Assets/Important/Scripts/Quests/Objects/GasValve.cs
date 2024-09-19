@@ -14,7 +14,7 @@ public class GasValve : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && isActive)
+        if (other.gameObject.CompareTag("PlayerHand") && isActive)
         {
             animator.Play("GasValveTurn");
             isActive = false;
