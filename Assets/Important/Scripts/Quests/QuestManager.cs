@@ -5,15 +5,18 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using AYellowpaper.SerializedCollections;
+using Palmmedia.ReportGenerator.Core;
 
 //keeps track of quests and their progresses
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager questManager;
+    public static event Action<bool, int> questUpdated;
     
     [SerializedDictionary("QuestID", "Quest")]
     public SerializedDictionary<int, Quest> questList = new SerializedDictionary<int, Quest>(); //MASTER QUEST LIST
-    
+
+
     public enum TargetObject
     {
         Inflammable,
@@ -124,6 +127,9 @@ public class QuestManager : MonoBehaviour
             questList[questID].progress = Quest.QuestProgress.COMPLETED;
             UpdateSuccessRate(questID, questList[questID].successRateReward);
             Debug.Log("completed quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
+
+            //Connor's addition to send signal to phone
+            questUpdated(true, questID);
         }
     }
     private void UncompleteQuest(int questID)
@@ -134,6 +140,8 @@ public class QuestManager : MonoBehaviour
             UpdateSuccessRate(questID, -questList[questID].successRateReward);
             questList[questID].progress = Quest.QuestProgress.AVAILABLE;
             Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
+
+            questUpdated(false, questID);   
         }
     }
     // public void CloseQuest(int questID)
