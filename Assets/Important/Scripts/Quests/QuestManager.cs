@@ -12,24 +12,9 @@ public class QuestManager : MonoBehaviour
 {
     public static QuestManager questManager;
     public static event Action<bool, int> questUpdated;
-    public bool updateQuest = false;
     
     [SerializedDictionary("QuestID", "Quest")]
     public SerializedDictionary<int, Quest> questList = new SerializedDictionary<int, Quest>(); //MASTER QUEST LIST
-
-
-    //DELETE THIS LATER PLEASE IT'S VERY HEAVY ON THE SCENE AND ONLY USED FOR TESTING PURPOSES!!!!!!!!!!!!!!!!!!!!!!!!
-    private void Update()
-    {
-        if (updateQuest)
-        {
-            questUpdated(true, 1);
-        }
-        else
-        {
-            questUpdated(false, 1);
-        }
-    }
 
 
     public enum TargetObject
@@ -155,6 +140,8 @@ public class QuestManager : MonoBehaviour
             UpdateSuccessRate(questID, -questList[questID].successRateReward);
             questList[questID].progress = Quest.QuestProgress.AVAILABLE;
             Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
+
+            questUpdated(false, questID);   
         }
     }
     // public void CloseQuest(int questID)
