@@ -12,7 +12,8 @@ public class Switch : MonoBehaviour
    
    [NonSerialized] public QuestManager.TargetObject questObject;
 
-   public static event Action OnConditionerActivate; 
+   public static event Action OnConditionerActivate;
+   public static event Action OnLightActivate;
    private void OnTriggerEnter(Collider other)
    {
       if (other.gameObject.tag == "Player" && timer>=treshold)
@@ -25,6 +26,10 @@ public class Switch : MonoBehaviour
          if (questObject == QuestManager.TargetObject.Airconditioning)
          {
             OnConditionerActivate?.Invoke();
+         }
+         if (questObject == QuestManager.TargetObject.Light)
+         {
+            OnLightActivate?.Invoke();
          }
       }
    }

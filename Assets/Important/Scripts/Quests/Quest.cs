@@ -35,5 +35,5 @@ public class Quest
     [NonSerialized] public int questObjectiveCount = 0;//current number of quest objective count
     public int questObjectiveRequirement; //required amount of quest objectives (objects)
 
-    public int expReward;
+    public int successRateReward;
 }

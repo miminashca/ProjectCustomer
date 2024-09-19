@@ -7,19 +7,16 @@ public class Airconditioner : QuestObject
 {
     public Switch onOffSwitch;
     
-    public static event Action OnConditionerCompleted;
-    public static event Action OnConditionerUncompleted;
-    private void Awake()
-    {
-        questObject = QuestManager.TargetObject.Airconditioning;
-        onOffSwitch.questObject = questObject;
-    }
+    // public static event Action OnConditionerCompleted;
+    // public static event Action OnConditionerUncompleted;
+   
     private void Start()
     {
-        Switch.OnConditionerActivate += AddProgress;
+        questObject = QuestManager.TargetObject.Airconditioning;
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        onOffSwitch.questObject = questObject;
+        Switch.OnConditionerActivate += AddProgress;
     }
-
     private void AddProgress()
     {
         if (!onOffSwitch.isOn)
@@ -35,19 +32,5 @@ public class Airconditioner : QuestObject
     private void OnDestroy()
     {
         Switch.OnConditionerActivate -= AddProgress;
-    }
-    
-    private void Update()
-    {
-        if (QuestManager.questManager.CheckCompletedQuest(questID))
-        {
-            OnConditionerCompleted?.Invoke();
-            //Debug.Log(QuestManager.questManager.questList[questID].progress);
-        }
-        if (QuestManager.questManager.CheckUncompletedQuest(questID))
-        {
-            OnConditionerUncompleted?.Invoke();
-            //Debug.Log(QuestManager.questManager.questList[questID].progress);
-        }
     }
 }
