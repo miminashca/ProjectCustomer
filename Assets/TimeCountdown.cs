@@ -46,7 +46,7 @@ public class TimeCountdown : MonoBehaviour
     {
         fade.SetBool("Fade", true);
         yield return new WaitUntil(() => black.color.a == 1);
-        SceneManager.LoadScene(1);
+        Debug.Log("timeup");
         
     }
 }
