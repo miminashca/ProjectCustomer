@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Equip : QuestObject
-{
+{ 
     public QuestManager.TargetObject questObject1;
     private void Start()
     {
