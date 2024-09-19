@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.ShaderKeywordFilter;
+
 public class TimeCountdown : MonoBehaviour
 {
     [SerializeField] Image black;
