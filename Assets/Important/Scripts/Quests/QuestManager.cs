@@ -5,7 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using AYellowpaper.SerializedCollections;
-using Palmmedia.ReportGenerator.Core;
+
 
 //keeps track of quests and their progresses
 public class QuestManager : MonoBehaviour
