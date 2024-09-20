@@ -129,7 +129,10 @@ public class QuestManager : MonoBehaviour
             Debug.Log("completed quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
 
             //Connor's addition to send signal to phone
-            questUpdated(true, questID);
+            if(questUpdated != null)
+            {
+                questUpdated(true, questID);
+            }
         }
     }
     private void UncompleteQuest(int questID)
@@ -141,7 +144,10 @@ public class QuestManager : MonoBehaviour
             questList[questID].progress = Quest.QuestProgress.AVAILABLE;
             Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
 
-            questUpdated(false, questID);   
+            if(questUpdated != null)
+            {
+                questUpdated(false, questID);
+            }
         }
     }
     // public void CloseQuest(int questID)

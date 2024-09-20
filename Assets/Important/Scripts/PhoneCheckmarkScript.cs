@@ -35,4 +35,9 @@ public class PhoneCheckmarkScript : MonoBehaviour
             checkMark.enabled=false;
         }
     }
+
+    private void OnDestroy()
+    {
+        QuestManager.questUpdated -= checkOff;
+    }
 }
