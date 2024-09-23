@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Important/Scenes/OutdoorsScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
-  - enabled: 0
-    path: Assets/Scenes/ThijmenScene.unity
-    guid: e97739b9112eaa64b848e13210eb2b7d
+  - enabled: 1
+    path: Assets/Important/Scenes/StartCutscene.unity
+    guid: 7ef435d791073b5498aa8a50c897eb2c
+  - enabled: 1
+    path: Assets/Important/Scenes/Act12Scene.unity
+    guid: 8a0e976c6a64a3b4592bb753f7c015db
   - enabled: 1
     path: Assets/Important/Scenes/Act3Scene.unity
     guid: f2dd1984c2cc83f4ca430d6907edfa28
