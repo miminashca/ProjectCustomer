@@ -2197,8 +2197,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 85488ac0d725345c2a69682a46b505b7, type: 2}
     - target: {fileID: 1658687902623183219, guid: 3cb0e864d32f146d4a8a2d170aa03d90,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2292,8 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: 85488ac0d725345c2a69682a46b505b7, type: 2}
   player: {fileID: 0}
 --- !u!65 &774628418
 BoxCollider:
@@ -2994,8 +2992,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 5b940d32eff3b4383853d3aef3eea3d0, type: 2}
     - target: {fileID: 4630033044386376270, guid: 6def278f7f0a04de4879b931c6b0d5de,
         type: 3}
       propertyPath: m_Name
@@ -3108,8 +3105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: 5b940d32eff3b4383853d3aef3eea3d0, type: 2}
   player: {fileID: 0}
 --- !u!64 &979991401
 MeshCollider:
@@ -3323,8 +3319,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 1ec29195e4b504350aa22f9c5976cff8, type: 2}
     - target: {fileID: 1571157244857203001, guid: 1b1e40bf73ba74669804a51075acbaf9,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -3443,8 +3438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: 1ec29195e4b504350aa22f9c5976cff8, type: 2}
   player: {fileID: 0}
 --- !u!1001 &1062124102
 PrefabInstance:
@@ -3479,8 +3473,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 39dc2a4d3e8894b09a9c587c48f60fe8, type: 2}
     - target: {fileID: 5950960689713838126, guid: 3feef2507153e480eaa8a87726ce9bff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3751,8 +3744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: 39dc2a4d3e8894b09a9c587c48f60fe8, type: 2}
   player: {fileID: 0}
 --- !u!1 &1079979606
 GameObject:
@@ -4701,8 +4693,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: aa78db0ea1542433d8a6fa5d95ad16dc, type: 2}
     - target: {fileID: 919132149155446097, guid: 27de186724cb0624c87678c0cf7a188c,
         type: 3}
       propertyPath: m_Name
@@ -4812,8 +4803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: aa78db0ea1542433d8a6fa5d95ad16dc, type: 2}
   player: {fileID: 0}
 --- !u!1001 &1332943491
 PrefabInstance:
