@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AudioTest : MonoBehaviour
 {
-    [Range(0f, 1f)]
     public float volume;
 
     // Start is called before the first frame update

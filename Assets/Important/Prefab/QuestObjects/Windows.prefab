@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2508041768412487402}
   - component: {fileID: 4204630439426165949}
   - component: {fileID: 6413483165912623089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WindowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7229889294395102536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WindowPivotRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 7469984927779591459}
   - component: {fileID: 5755115785655502452}
   - component: {fileID: 2276643701275703231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WindowRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8207017261596998139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WindowPivotLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
