@@ -7,14 +7,18 @@ using UnityEngine;
 public class TextHandler : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] texts;
-    private int currentTextID = 0;
+    [SerializeField] private Animator animator;
+    private int currentText = -1;
     // Start is called before the first frame update
     void Start()
     {
         foreach (var text in texts)
         {
-            text.color = new Vector4(1,1,1,0);
+            text.enabled = false;
         }
+        texts[0].enabled = true;
+        animator = GetComponent<Animator>();
+        animator.SetBool("Fade",true);
     }
 
     // Update is called once per frame
@@ -22,6 +26,4 @@ public class TextHandler : MonoBehaviour
     {
         
     }
-
-
 }
