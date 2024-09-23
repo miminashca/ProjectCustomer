@@ -6,5 +6,5 @@ using UnityEngine;
 public class QuestObject : MonoBehaviour
 {
     protected QuestManager.TargetObject questObject;
-    [NonSerialized] public int questID;
+    protected int questID;
 }

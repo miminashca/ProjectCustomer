@@ -12,10 +12,13 @@ public class Switch : MonoBehaviour
    
    [NonSerialized] public QuestManager.TargetObject questObject;
 
-   public static event Action OnConditionerActivate; 
+   public static event Action OnConditionerActivate;
+   public static event Action OnLightActivate;
+   [SerializeField] private AudioSource soundOn;
+   [SerializeField] private AudioSource soundOff;
    private void OnTriggerEnter(Collider other)
    {
-      if (other.gameObject.tag == "Player" && timer>=treshold)
+      if (other.gameObject.tag == "PlayerHand" && timer>=treshold)
       {
          isOn = !isOn;
          // Debug.Log(isOn);
@@ -25,6 +28,24 @@ public class Switch : MonoBehaviour
          if (questObject == QuestManager.TargetObject.Airconditioning)
          {
             OnConditionerActivate?.Invoke();
+         }
+         if (questObject == QuestManager.TargetObject.Light)
+         {
+            OnLightActivate?.Invoke();
+         }
+         if (isOn)
+         {
+            if(soundOn != null)
+            {
+                soundOn.Play();
+            }
+         }
+         else
+         {
+            if(soundOff != null)
+            {
+                soundOff.Play();
+            }
          }
       }
    }

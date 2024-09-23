@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.ShaderKeywordFilter;
+
 public class TimeCountdown : MonoBehaviour
 {
     [SerializeField] Image black;
@@ -46,7 +46,7 @@ public class TimeCountdown : MonoBehaviour
     {
         fade.SetBool("Fade", true);
         yield return new WaitUntil(() => black.color.a == 1);
-        SceneManager.LoadScene(1);
+        Debug.Log("timeup");
         
     }
 }

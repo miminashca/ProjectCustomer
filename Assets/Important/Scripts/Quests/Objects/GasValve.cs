@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GasValve : MonoBehaviour
+public class GasValve : QuestObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Animator animator;
+    private bool isActive = true;
+
+    private AudioSource sound;
+    private void Start()
     {
-        
+        questObject = QuestManager.TargetObject.Gas;
+        questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        sound = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("PlayerHand") && isActive)
+        {
+            animator.Play("GasValveTurn");
+            isActive = false;
+            QuestManager.questManager.AddQuestProgress(questID, 1);
+            if(sound != null)
+            {
+                sound.Play();
+            }
+        }
     }
 }

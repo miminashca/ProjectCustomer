@@ -6,27 +6,32 @@ using Unity.VisualScripting;
 using UnityEngine;
 using AYellowpaper.SerializedCollections;
 
+
 //keeps track of quests and their progresses
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager questManager;
+    public static event Action<bool, int> questUpdated;
     
     [SerializedDictionary("QuestID", "Quest")]
     public SerializedDictionary<int, Quest> questList = new SerializedDictionary<int, Quest>(); //MASTER QUEST LIST
-    
+
+
     public enum TargetObject
     {
-        Sink,
-        Couch,
+        Inflammable,
         Window,
-        Electricity,
-        Fuse,
-        Gas,
-        Mask,
         Airconditioning,
-        Bath,
-        Bathroom
+        Light,
+        Mask,
+        FireExtinguisher,
+        RiseWater,
+        Bathroom,
+        Gas,
+        Electricity
     };
+
+    [NonSerialized] public int successRate = 0;
     
     private void Awake()
     {
@@ -120,7 +125,14 @@ public class QuestManager : MonoBehaviour
         if (CheckAvailableQuest(questID) || CheckAcceptedQuest(questID))
         {
             questList[questID].progress = Quest.QuestProgress.COMPLETED;
-            Debug.Log("completed quest: " + questID + ", " + questList[questID].title);
+            UpdateSuccessRate(questID, questList[questID].successRateReward);
+            Debug.Log("completed quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
+
+            //Connor's addition to send signal to phone
+            if(questUpdated != null)
+            {
+                questUpdated(true, questID);
+            }
         }
     }
     private void UncompleteQuest(int questID)
@@ -128,8 +140,14 @@ public class QuestManager : MonoBehaviour
         if (CheckCompletedQuest(questID))
         {
             questList[questID].progress = Quest.QuestProgress.UNCOMPLETED;
+            UpdateSuccessRate(questID, -questList[questID].successRateReward);
             questList[questID].progress = Quest.QuestProgress.AVAILABLE;
-            Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title);
+            Debug.Log("uncompleted quest: " + questID + ", " + questList[questID].title + ", CURRENT SUCCESS RATE: " + successRate);
+
+            if(questUpdated != null)
+            {
+                questUpdated(false, questID);
+            }
         }
     }
     // public void CloseQuest(int questID)
@@ -139,6 +157,12 @@ public class QuestManager : MonoBehaviour
     //         questList[questID].progress = Quest.QuestProgress.DONE;
     //     }
     //} //Close the quest after qiving XP reward, (call from quest object scripts)
+
+
+    private void UpdateSuccessRate(int questID, int successRateReward)
+    {
+        successRate += successRateReward;
+    }
     
     
     public int FindIDbyTargetObject(TargetObject targetObject)
