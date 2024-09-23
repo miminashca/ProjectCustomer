@@ -14,6 +14,8 @@ public class Switch : MonoBehaviour
 
    public static event Action OnConditionerActivate;
    public static event Action OnLightActivate;
+   [SerializeField] private AudioSource soundOn;
+   [SerializeField] private AudioSource soundOff;
    private void OnTriggerEnter(Collider other)
    {
       if (other.gameObject.tag == "PlayerHand" && timer>=treshold)
@@ -30,6 +32,20 @@ public class Switch : MonoBehaviour
          if (questObject == QuestManager.TargetObject.Light)
          {
             OnLightActivate?.Invoke();
+         }
+         if (isOn)
+         {
+            if(soundOn != null)
+            {
+                soundOn.Play();
+            }
+         }
+         else
+         {
+            if(soundOff != null)
+            {
+                soundOff.Play();
+            }
          }
       }
    }

@@ -6,6 +6,7 @@ using System;
 public class Airconditioner : QuestObject
 {
     public Switch onOffSwitch;
+    [SerializeField] private GameObject sound;
     
     // public static event Action OnConditionerCompleted;
     // public static event Action OnConditionerUncompleted;
@@ -22,10 +23,12 @@ public class Airconditioner : QuestObject
         if (!onOffSwitch.isOn)
         {
             QuestManager.questManager.AddQuestProgress(questID, 1);
+            sound.GetComponent<AudioSource>().Stop();
         }
         else if (onOffSwitch.isOn)
         {
             QuestManager.questManager.AddQuestProgress(questID, -1);
+            sound.GetComponent<AudioSource>().Play();
         }
         
     }
