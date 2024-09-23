@@ -32,7 +32,7 @@ public class OutlineController : MonoBehaviour
     void Update()
     {
         CheckDistance(player);
-        // Debug.Log(Distance(player));
+        Debug.Log(Distance(player));
     }
     private void CheckDistance(PlayerMovement other)
     {
