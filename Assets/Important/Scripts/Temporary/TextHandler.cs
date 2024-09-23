@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TextHandler : MonoBehaviour
 {
@@ -60,5 +61,9 @@ public class TextHandler : MonoBehaviour
            
         }
         
+        if(texts.Length > currentTextID)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
