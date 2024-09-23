@@ -30,7 +30,7 @@ public class SoundOcclusion : MonoBehaviour
     }
     private void Start()
     {
-        Listener = GameObject.FindGameObjectWithTag("Player");
+        Listener = GameObject.FindGameObjectWithTag("MainCamera");
         sound = GetComponent<AudioSource>();   
     }
 
