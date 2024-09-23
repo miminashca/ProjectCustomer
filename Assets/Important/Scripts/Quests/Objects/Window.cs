@@ -6,12 +6,13 @@ public class Window : QuestObject
     private bool windowIsActive = true;
     //public static event Action OnWindowCompleted;
     private Animator animator;
+    private AudioSource closeSound;
     
     private void Start()
     {
         questObject = QuestManager.TargetObject.Window;
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
-        
+        closeSound = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
 
@@ -21,6 +22,7 @@ public class Window : QuestObject
         {
             QuestManager.questManager.AddQuestProgress(questID, 1);
             animator.Play("WindowClose");
+            closeSound.Play();
             windowIsActive = false;
         }
     }
