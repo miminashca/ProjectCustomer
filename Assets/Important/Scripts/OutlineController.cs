@@ -6,7 +6,8 @@ using UnityEngine;
 public class OutlineController : MonoBehaviour
 {
     [SerializeField] private Material outlineMaterial;
-    [SerializeField] private CharacterController player;
+    //[SerializeField] private CharacterController player;
+    private PlayerMovement player;
 
     private Color color;
     private float colorIntensity = 0.1f;
@@ -17,7 +18,7 @@ public class OutlineController : MonoBehaviour
     
     private void Start()
     {
-        player = FindObjectOfType<CharacterController>();
+        player = FindObjectOfType<PlayerMovement>();
         
         if (Distance(player) <= maxDistance)
         {
@@ -31,8 +32,9 @@ public class OutlineController : MonoBehaviour
     void Update()
     {
         CheckDistance(player);
+        // Debug.Log(Distance(player));
     }
-    private void CheckDistance(CharacterController other)
+    private void CheckDistance(PlayerMovement other)
     {
         float proportion = 1.1f - ((Distance(other) / maxDistance));
         if (Distance(other) <= maxDistance)
@@ -47,7 +49,7 @@ public class OutlineController : MonoBehaviour
         }
         outlineMaterial.SetColor("_OutlineColor", color*colorIntensity);
     }
-    private float Distance(CharacterController other)
+    private float Distance(PlayerMovement other)
     {
         Vector2 location = new Vector2(transform.position.x, transform.position.z);
         Vector2 otherLocation = new Vector2(other.transform.position.x, other.transform.position.z);
