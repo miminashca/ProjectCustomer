@@ -9563,7 +9563,7 @@ MonoBehaviour:
   black: {fileID: 1930679057}
   fade: {fileID: 1930679056}
   timerText: {fileID: 779699949}
-  timeRemaining: 180
+  timeRemaining: 240
 --- !u!1 &1964982925
 GameObject:
   m_ObjectHideFlags: 0
