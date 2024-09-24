@@ -12626,10 +12626,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3786830916253512254, guid: 05bf9a86ed42a4b39b8016850db46251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192842581249209292, guid: 05bf9a86ed42a4b39b8016850db46251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6176322593706235992, guid: 05bf9a86ed42a4b39b8016850db46251,
         type: 3}
       propertyPath: m_Name
       value: DoorPivot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623154803011404617, guid: 05bf9a86ed42a4b39b8016850db46251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867417398370394725, guid: 05bf9a86ed42a4b39b8016850db46251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26754,6 +26774,7 @@ GameObject:
   - component: {fileID: 7491156906966317539}
   - component: {fileID: 731184822475498288}
   - component: {fileID: 6845801317811872036}
+  - component: {fileID: 7491156906966317540}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -28656,7 +28677,7 @@ GameObject:
   - component: {fileID: 5037973431729375958}
   - component: {fileID: 7562988005631042953}
   - component: {fileID: 7562988005631042954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28742,12 +28763,33 @@ Transform:
   m_GameObject: {fileID: 6479137908139694521}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.08, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450653654709913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7491156906966317540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479137908139694521}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03910745, y: 0.075973794, z: 0.023216147}
+  m_Center: {x: -0.1020845, y: 0.07083077, z: 0.013580742}
 --- !u!1 &7525449101975421041
 GameObject:
   m_ObjectHideFlags: 0
