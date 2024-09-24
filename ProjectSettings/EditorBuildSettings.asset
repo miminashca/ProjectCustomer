@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Important/Scenes/Act12Scene.unity
     guid: 8a0e976c6a64a3b4592bb753f7c015db
   - enabled: 1
-    path: Assets/Important/Scenes/Act3Scene.unity
-    guid: f2dd1984c2cc83f4ca430d6907edfa28
+    path: Assets/Important/Scenes/MiddleCutScene.unity
+    guid: 6138046a4bc144342bd720cf248214f5
+  - enabled: 1
+    path: Assets/Important/Scenes/2ndPartWithUI.unity
+    guid: c49e77a2cfdf90d4ab988deed98515af
+  - enabled: 1
+    path: Assets/Important/Scenes/EndCutScene.unity
+    guid: 2c5053f3c8a417a41b15193f2ac90e03
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 07656d2d02c3f4bdd859c83f73824e46,
       type: 2}
