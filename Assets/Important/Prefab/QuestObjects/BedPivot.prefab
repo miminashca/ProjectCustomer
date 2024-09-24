@@ -53,6 +53,18 @@ MonoBehaviour:
   handTransform: {fileID: 0}
   dragForce: 20
   distanceThreshold: 0.1
+  gripAnim:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grip Anim
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 93bb0f2b-c691-41e0-9682-0f9a4b0ebc8f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!114 &8555120574714355180
 MonoBehaviour:
   m_ObjectHideFlags: 0
