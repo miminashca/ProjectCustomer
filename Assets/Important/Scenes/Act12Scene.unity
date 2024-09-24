@@ -5059,8 +5059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801b7c25ff285461987d92885a09bd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123,
-    type: 3}
+  outlineMaterial: {fileID: 2100000, guid: e41c70487bf0441f1aa6a1fbc1a8d0fb, type: 2}
   player: {fileID: 0}
 --- !u!114 &905916953
 MonoBehaviour:
@@ -5118,7 +5117,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -1494204745075714433, guid: 22bc8aa202554a54a93243add71e04fa, type: 3}
-  - {fileID: -876546973899608171, guid: 8a544be91f8224b6cacba736090af123, type: 3}
+  - {fileID: 2100000, guid: e41c70487bf0441f1aa6a1fbc1a8d0fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11478,6 +11477,30 @@ MonoBehaviour:
   handTransform: {fileID: 0}
   dragForce: 10
   distanceThreshold: 0.1
+  leftGrip:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 0b67b415-6466-416c-ae29-807800716e55
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rightGrip:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 4e5f72d0-ff58-4729-96aa-1f657a7c1c03
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!54 &1830701135
 Rigidbody:
   m_ObjectHideFlags: 0

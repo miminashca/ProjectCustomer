@@ -30,7 +30,7 @@ public class Window : QuestObject
                 closeSound.Play();
                 isOpen = false;
             }
-            if (!isOpen)
+            else if (!isOpen)
             {
                 QuestManager.questManager.AddQuestProgress(questID, -1);
                 animator.Play("OpenWindow");
