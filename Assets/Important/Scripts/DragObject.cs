@@ -17,6 +17,13 @@ public class DragObject : MonoBehaviour
 
     [SerializeField] private InputActionProperty leftGrip;
     [SerializeField] private InputActionProperty rightGrip;
+    
+    private enum CurrentHand
+    {
+        LEFT,
+        RIGHT
+    }
+    private CurrentHand currentHand;
 
     void Start()
     {
@@ -25,12 +32,27 @@ public class DragObject : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (inTrigger && (Leftgripvalue > .8 || Rightgripvalue > .8))
+        //start dragging
+        if (inTrigger)
         {
-            StartDragging();
+            if (Leftgripvalue > .8)
+            {
+                currentHand = CurrentHand.LEFT;
+                StartDragging();
+            }
+            else if (Rightgripvalue > .8)
+            {
+                currentHand = CurrentHand.RIGHT;
+                StartDragging();
+            }
         }
 
-        if (Leftgripvalue < .1 || Rightgripvalue < .1)
+        //stop dragging
+        if (currentHand == CurrentHand.LEFT && Leftgripvalue < .1)
+        { 
+            StopDragging();
+        }
+        else if (currentHand == CurrentHand.RIGHT && Rightgripvalue < .1)
         { 
             StopDragging();
         }
@@ -81,8 +103,8 @@ public class DragObject : MonoBehaviour
 
     private void Update()
     {
-         Leftgripvalue = leftGrip.action.ReadValue<float>();
-         Rightgripvalue = rightGrip.action.ReadValue<float>();
+        Leftgripvalue = leftGrip.action.ReadValue<float>();
+        Rightgripvalue = rightGrip.action.ReadValue<float>();
 
         Debug.Log(Leftgripvalue);
         Debug.Log(Rightgripvalue);
