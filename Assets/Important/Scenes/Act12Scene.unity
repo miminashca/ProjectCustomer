@@ -1396,42 +1396,42 @@ PrefabInstance:
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[1].Key
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[2].Key
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[3].Key
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[4].Key
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[5].Key
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[6].Key
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[7].Key
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: questList._serializedList.Array.data[8].Key
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
@@ -1550,8 +1550,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
+      propertyPath: questList._serializedList.Array.data[2].Value.questObjectiveRequirement
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
+        type: 3}
       propertyPath: questList._serializedList.Array.data[6].Value.questObjectiveRequirement
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
