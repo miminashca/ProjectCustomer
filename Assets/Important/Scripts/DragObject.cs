@@ -25,11 +25,12 @@ public class DragObject : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (inTrigger && Leftgripvalue > .8 || Rightgripvalue > .8)
+        if (inTrigger && (Leftgripvalue > .8 || Rightgripvalue > .8))
         {
             StartDragging();
         }
-        if (Leftgripvalue > .8 || Rightgripvalue > .8)
+
+        if (Leftgripvalue < .1 || Rightgripvalue < .1)
         { 
             StopDragging();
         }
