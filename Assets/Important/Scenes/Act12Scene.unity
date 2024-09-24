@@ -7606,7 +7606,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.41
+      value: -2.409
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
@@ -7683,10 +7683,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1122846913}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a7c994e06689e64280592f308a5e146,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1122846918}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
@@ -7696,6 +7692,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1122846919}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a7c994e06689e64280592f308a5e146,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1122846920}
   m_SourcePrefab: {fileID: 100100000, guid: 2a7c994e06689e64280592f308a5e146, type: 3}
 --- !u!1 &1122846910 stripped
 GameObject:
@@ -7730,28 +7730,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMaterial: {fileID: 2100000, guid: 5b940d32eff3b4383853d3aef3eea3d0, type: 2}
   player: {fileID: 0}
---- !u!64 &1122846913
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122846910}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7488526592474011089, guid: 2a7c994e06689e64280592f308a5e146, type: 3}
 --- !u!4 &1122846914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a7c994e06689e64280592f308a5e146,
@@ -7868,7 +7846,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -7956,8 +7934,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.010152569, y: 0.006919147, z: 0.019907307}
-  m_Center: {x: 0.0008669301, y: 0.000891217, z: -0.0042066006}
+  m_Size: {x: 0.007728189, y: 0.0067217103, z: 0.019907307}
+  m_Center: {x: -0.000345256, y: 0.0007924989, z: -0.0042066006}
+--- !u!65 &1122846920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122846910}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006697861, y: 0.0059546893, z: 0.019907307}
+  m_Center: {x: -0.00086042105, y: 0.0013734467, z: -0.0042065983}
 --- !u!1 &1134631071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8520,8 +8519,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.005077071, y: 0.005883524, z: 0.0046641696}
-  m_Center: {x: -0.00019504459, y: -0.00009157971, z: -0.00049607066}
+  m_Size: {x: 0.005077071, y: 0.0071730926, z: 0.0052009732}
+  m_Center: {x: -0.00019504457, y: 0.00055320497, z: -0.0007644717}
 --- !u!114 &1203832849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8646,7 +8645,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -23651,6 +23650,7 @@ GameObject:
   - component: {fileID: 8511596577200122120}
   - component: {fileID: 8397525161209410969}
   - component: {fileID: 4185041544631125354}
+  - component: {fileID: 8511596577200122121}
   m_Layer: 0
   m_Name: BathShelf
   m_TagString: Untagged
@@ -25791,7 +25791,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -27600,7 +27600,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -27928,7 +27928,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -28456,7 +28456,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -29680,7 +29680,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -30584,7 +30584,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -31174,6 +31174,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450653654709913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8511596577200122121
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889148084923887477}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3496751956192061873, guid: d35786a34be56ba46988d68514ad7cbc, type: 3}
 --- !u!4 &8511596578834247737
 Transform:
   m_ObjectHideFlags: 0
@@ -31386,7 +31408,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -32515,7 +32537,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -32755,7 +32777,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -33961,7 +33983,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
