@@ -1030,7 +1030,7 @@ PrefabInstance:
     - target: {fileID: 6741171265593891143, guid: b94305ac976df044eb3f67be07817b8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -508.8
+      value: -550
       objectReference: {fileID: 0}
     - target: {fileID: 6741171265593891143, guid: b94305ac976df044eb3f67be07817b8a,
         type: 3}
@@ -4304,7 +4304,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.409
+      value: -2.343
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7c994e06689e64280592f308a5e146,
         type: 3}
@@ -11804,7 +11804,7 @@ Transform:
   m_GameObject: {fileID: 6886713077580814690}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 1.3781079, z: 0}
+  m_LocalPosition: {x: 0.204, y: 1.3781079, z: -0.618}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12866,6 +12866,7 @@ GameObject:
   - component: {fileID: 5869004968706828843}
   - component: {fileID: 7950037638187912826}
   - component: {fileID: 8717821676232213061}
+  - component: {fileID: 8717821676232213062}
   m_Layer: 0
   m_Name: ClosetFloor
   m_TagString: Untagged
@@ -17789,6 +17790,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8717821676232213062
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192952539140154458}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2844848064859184915, guid: d35786a34be56ba46988d68514ad7cbc, type: 3}
 --- !u!4 &8739331245643655130
 Transform:
   m_ObjectHideFlags: 0
