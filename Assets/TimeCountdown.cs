@@ -14,6 +14,8 @@ public class TimeCountdown : MonoBehaviour
     [SerializeField] float timeRemaining;
 
     bool nextSceneLoading;
+
+    public bool leftRoom;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class TimeCountdown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timeRemaining > 0)
+        if (timeRemaining > 0 && leftRoom)
         {
             timeRemaining -= Time.deltaTime;
         }
@@ -49,4 +51,6 @@ public class TimeCountdown : MonoBehaviour
         Debug.Log("timeup");
         
     }
+
+    
 }
