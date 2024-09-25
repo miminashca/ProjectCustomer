@@ -7,41 +7,33 @@ using UnityEngine.SocialPlatforms.Impl;
 public class ReadSuccessRate : MonoBehaviour
 {
     private QuestManager manager;
-    private TextMeshProUGUI text1;
-    private TextMeshProUGUI text2;
-    private TextMeshProUGUI text3;
-
-    
+    [SerializeField] private TextMeshProUGUI text1;
+    [SerializeField] private TextMeshProUGUI text2;
 
     [Header ("Scores lower than 20")]
 
     [SerializeField] private string lowScoreText1;
     [SerializeField] private string LowScoreText2;
-    [SerializeField] private string LowScoreText3;
 
     [Header("Scores between 20 and 40")]
 
     [SerializeField] private string LowMidScoreText1;
     [SerializeField] private string LowMidScoreText2;
-    [SerializeField] private string LowMidScoreText3;
 
     [Header("Scores between 40 and 60")]
 
     [SerializeField] private string MidScoreText1;
     [SerializeField] private string MidScoreText2;
-    [SerializeField] private string MidScoreText3;
 
     [Header("Scores between 60 and 80")]
 
     [SerializeField] private string MidHighScoreText1;
     [SerializeField] private string MidHighScoreText2;
-    [SerializeField] private string MidHighScoreText3;
 
     [Header("Scores between 80 and 100")]
 
     [SerializeField] private string HighScoreText1;
     [SerializeField] private string HighScoreText2;
-    [SerializeField] private string HighScoreText3;
 
     // Start is called before the first frame update
     void Start()
@@ -52,11 +44,26 @@ public class ReadSuccessRate : MonoBehaviour
         {
             text1.text = lowScoreText1;
             text2.text = LowScoreText2;
-            text3.text = LowScoreText3;
         }
-        if(score >= 20)
+        if(score >= 20 && score <40)
         {
-
+            text1.text = LowMidScoreText1;
+            text2.text = LowMidScoreText2;
+        }
+        if(score >= 40 && score < 60)
+        {
+            text1.text = MidScoreText1;
+            text2.text = MidScoreText2;
+        }
+        if(score >= 60 && score < 80)
+        {
+            text1.text = MidHighScoreText1;
+            text2.text = MidHighScoreText2;
+        }
+        if(score >= 80)
+        {
+            text1.text = HighScoreText1;
+            text2.text = HighScoreText2;
         }
     }
 
