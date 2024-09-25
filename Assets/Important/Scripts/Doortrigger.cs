@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour
 {
     [SerializeField] private Transform doorPivot = null;
+    [SerializeField] private Collider doorCollider = null;
     [SerializeField] private Animator door = null;
     [SerializeField] private GameObject openSound;
     private AudioSource openSoundPlayer;
@@ -23,7 +24,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerHand"))
         {
-            Debug.Log("active");
+            //Debug.Log("active");
             Debug.Log(doorPivot.localRotation.eulerAngles.y);
             
             if (doorClosed && doorPivot.rotation.eulerAngles.y == 0f)
@@ -38,6 +39,7 @@ public class DoorTrigger : MonoBehaviour
                 }
 
                 doorClosed = false;
+                doorCollider.isTrigger = true;
                 openSoundPlayer.Play();
             }
             else if (!doorClosed && (doorPivot.rotation.eulerAngles.y == 90f || doorPivot.rotation.eulerAngles.y == 270f))
@@ -52,6 +54,7 @@ public class DoorTrigger : MonoBehaviour
                 }
 
                 doorClosed = true;
+                doorCollider.isTrigger = false;
                 closeSoundPlayer.Play();
             }
         }
