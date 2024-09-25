@@ -190,16 +190,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text1: {fileID: 1661339080}
   text2: {fileID: 930872678}
-  lowScoreText1: The wildfire overwhelmed you.
-  LowScoreText2: You still clearly performed better with the plan.
-  LowMidScoreText1: You made it through, but barely.
-  LowMidScoreText2: The planning helped, but there's more you can do.
-  MidScoreText1: 
-  MidScoreText2: 
-  MidHighScoreText1: 
-  MidHighScoreText2: 
-  HighScoreText1: 
-  HighScoreText2: 
+  lowScoreText1: The wildfire overwhelmed you. It's clear there's much more to prepare.
+    your home and family are at risk.
+  LowScoreText2: Take this as a critical lesson to be better equipped next time.
+    Visit Ready.gov to learn how!
+  LowMidScoreText1: You made it through, but just barely. Some actions helped, but
+    you need to take stronger steps.
+  LowMidScoreText2: More planning and better preparation will improve your chances.
+    Check Ready.gov to improve your emergency plan.
+  MidScoreText1: "You\u2019re getting there! You\u2019ve taken important steps, but
+    there are still some gaps in your preparation."
+  MidScoreText2: ' Keep refining your emergency plan to increase your safety. For
+    more tips, visit Ready.gov!'
+  MidHighScoreText1: "Great job! You\u2019ve done well to protect your home and loved
+    ones."
+  MidHighScoreText2: With a little more attention to detail, you'll be fully prepared
+    for anything. Check Ready.gov for additional details!
+  HighScoreText1: "Excellent! Your planning and actions were spot-on. You\u2019ve
+    maximized your preparedness and ensured the safety of your home."
+  HighScoreText2: "Keep up the great work\u2014you\u2019re a wildfire preparedness
+    champion. For ongoing preparedness, visit Ready.gov!"
 --- !u!1 &470387762
 GameObject:
   m_ObjectHideFlags: 0
