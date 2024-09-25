@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texts:
-  - {fileID: 930872678}
+  - {fileID: 1661339080}
   - {fileID: 930872678}
   - {fileID: 1615170967}
-  opacityIncrements: 0.1
+  opacityIncrements: 0.003
   visibleTime: 3
 --- !u!1 &470387762
 GameObject:
