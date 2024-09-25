@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 909756136}
   - {fileID: 797213507}
   - {fileID: 511056177}
-  opacityIncrements: 0.1
+  opacityIncrements: 0.003
   visibleTime: 3
 --- !u!1 &280435641
 GameObject:

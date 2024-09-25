@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121041251}
   - component: {fileID: 121041252}
+  - component: {fileID: 121041253}
   m_Layer: 5
   m_Name: TextHandler
   m_TagString: Untagged
@@ -174,7 +175,31 @@ MonoBehaviour:
   - {fileID: 1661339080}
   - {fileID: 930872678}
   opacityIncrements: 0.1
-  visibleTime: 2
+  visibleTime: 3
+--- !u!114 &121041253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121041250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b765bc1a0a325419d097030352df04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 1661339080}
+  text2: {fileID: 930872678}
+  lowScoreText1: The wildfire overwhelmed you.
+  LowScoreText2: You still clearly performed better with the plan.
+  LowMidScoreText1: You made it through, but barely.
+  LowMidScoreText2: The planning helped, but there's more you can do.
+  MidScoreText1: 
+  MidScoreText2: 
+  MidHighScoreText1: 
+  MidHighScoreText2: 
+  HighScoreText1: 
+  HighScoreText2: 
 --- !u!1 &470387762
 GameObject:
   m_ObjectHideFlags: 0
