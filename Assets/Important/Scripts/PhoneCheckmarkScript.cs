@@ -32,7 +32,10 @@ public class PhoneCheckmarkScript : MonoBehaviour
         }
         else
         {
-            checkMark.enabled=false;
+            if(ID == ThisID && checkMark.enabled)
+            {
+                checkMark.enabled = false;
+            }
         }
     }
 

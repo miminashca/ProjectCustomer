@@ -30,9 +30,11 @@ public class TextHandler : MonoBehaviour
     
     void Update()
     {
-        
-        texts[currentTextID].color = new Vector4(1, 1, 1, opacity);
-        
+        if(currentTextID < texts.Length)
+        {
+            texts[currentTextID].color = new Vector4(1, 1, 1, opacity);
+        }
+
         if (!textVisible)
         {
             opacity += opacityIncrements;
@@ -51,6 +53,7 @@ public class TextHandler : MonoBehaviour
                 {
                     currentTextID ++;
                     textVisible = false;
+                    countdown = 0;
                 }
             }
         }
@@ -61,7 +64,7 @@ public class TextHandler : MonoBehaviour
            
         }
         
-        if(texts.Length > currentTextID)
+        if(texts.Length < currentTextID)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

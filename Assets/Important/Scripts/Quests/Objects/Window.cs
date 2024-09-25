@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class Window : QuestObject
 {
-    private bool windowIsActive = true;
+    private bool isOpen = true;
     //public static event Action OnWindowCompleted;
     private Animator animator;
     private AudioSource closeSound;
+    private float treshold = 1.5f;
+    private float time = 0f;
     
     private void Start()
     {
@@ -18,21 +20,35 @@ public class Window : QuestObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "PlayerHand" && windowIsActive)
+        if (other.gameObject.tag == "PlayerHand" && time >= treshold)
         {
-            QuestManager.questManager.AddQuestProgress(questID, 1);
-            animator.Play("WindowClose");
-            closeSound.Play();
-            windowIsActive = false;
+            time = 0f;
+            if (isOpen)
+            {
+                QuestManager.questManager.AddQuestProgress(questID, 1);
+                animator.Play("CloseWindow");
+                closeSound.Play();
+                isOpen = false;
+            }
+            else if (!isOpen)
+            {
+                QuestManager.questManager.AddQuestProgress(questID, -1);
+                animator.Play("OpenWindow");
+                closeSound.Play();
+                isOpen = true;
+            }
         }
+        
     }
 
-    // private void Update()
-    // {
-    //     if (QuestManager.questManager.CheckCompletedQuest(questID))
-    //     {
-    //         OnWindowCompleted?.Invoke();
-    //         //Debug.Log(QuestManager.questManager.questList[questID].progress);
-    //     }
-    // }
+    private void FixedUpdate()
+    {
+        time += Time.deltaTime;
+        // if (QuestManager.questManager.CheckCompletedQuest(questID))
+        // {
+        //     OnWindowCompleted?.Invoke();
+        //     //Debug.Log(QuestManager.questManager.questList[questID].progress);
+        // }
+
+    }
 }
