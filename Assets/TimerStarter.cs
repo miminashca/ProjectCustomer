@@ -9,13 +9,16 @@ public class TimerStarter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = GetComponent<TimeCountdown>();
+        timer = FindAnyObjectByType<TimeCountdown>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(timer != null)
+        {
+            Debug.Log("FKUCKJS FKJSFJ");
+        }
     }
 
     private void OnTriggerExit(Collider other)
