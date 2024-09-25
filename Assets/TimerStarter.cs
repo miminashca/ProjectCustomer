@@ -15,10 +15,7 @@ public class TimerStarter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer != null)
-        {
-            Debug.Log("FKUCKJS FKJSFJ");
-        }
+       
     }
 
     private void OnTriggerExit(Collider other)
