@@ -175,7 +175,7 @@ MonoBehaviour:
   - {fileID: 930872678}
   - {fileID: 1615170967}
   opacityIncrements: 0.003
-  visibleTime: 3
+  visibleTime: 1.7
 --- !u!1 &470387762
 GameObject:
   m_ObjectHideFlags: 0
