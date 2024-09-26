@@ -11,6 +11,8 @@ TagManager:
   - Couch
   - Sink
   - Bath
+  - PlayerHead
+  - Level
   layers:
   - Default
   - TransparentFX
