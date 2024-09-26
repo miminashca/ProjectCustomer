@@ -89,7 +89,7 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.013108781, g: 2.4939265, b: 2.1544461, a: 3.3295705}
+    - _OutlineColor: {r: 0.047188785, g: 9.013058, b: 7.7861495, a: 12.03314}
   m_BuildTextureStacks: []
 --- !u!114 &8197650868213107773
 MonoBehaviour:

@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 6
+  ThisID: 5
 --- !u!1 &1714508481528673196
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +366,7 @@ MonoBehaviour:
   black: {fileID: 32432152616322460}
   fade: {fileID: 2510323853135703341}
   timerText: {fileID: 1735796103296679099}
+  popUpText: {fileID: 0}
   timeRemaining: 5
 --- !u!222 &3492173269737383584
 CanvasRenderer:
@@ -514,7 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 4
+  ThisID: 3
 --- !u!1 &4400124669736835351
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 3
+  ThisID: 2
 --- !u!1 &4423983157369678845
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 5
+  ThisID: 4
 --- !u!1 &5048855692248358202
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 2
+  ThisID: 1
 --- !u!1 &5513937479782901816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 8
+  ThisID: 7
 --- !u!1 &6879384748299214951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291e2fb35144ef245902500549135e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisID: 7
+  ThisID: 6
 --- !u!1 &8900836785066121786
 GameObject:
   m_ObjectHideFlags: 0
