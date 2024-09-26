@@ -9,6 +9,7 @@ public class Window : QuestObject
     private AudioSource closeSound;
     private float treshold = 1.5f;
     private float time = 0f;
+    [SerializeField] bool closeOnStart;
     
     private void Start()
     {
@@ -16,6 +17,13 @@ public class Window : QuestObject
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
         closeSound = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        if (closeOnStart)
+        {
+            QuestManager.questManager.AddQuestProgress(questID, 1);
+            animator.Play("CloseWindow");
+            closeSound.Play();
+            isOpen = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
