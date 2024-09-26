@@ -174,8 +174,9 @@ MonoBehaviour:
   texts:
   - {fileID: 1661339080}
   - {fileID: 930872678}
-  opacityIncrements: 0.1
+  opacityIncrements: 0.003
   visibleTime: 1.7
+  finalscene: 1
 --- !u!114 &121041253
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,11 +18,8 @@ EditorBuildSettings:
     path: Assets/Important/Scenes/MiddleCutScene.unity
     guid: 6138046a4bc144342bd720cf248214f5
   - enabled: 1
-    path: Assets/Important/Scenes/2ndPartAgain.unity
-    guid: 04a812e407964b64f9bf1fe6fc59af94
-  - enabled: 0
-    path: Assets/Important/Scenes/2ndPartWithUI.unity
-    guid: f4aec17cac5b8b645909c253c4c8e5d6
+    path: Assets/Important/Scenes/TempSecondScene.unity
+    guid: fc4957e8b04acd24dbbb381d4bf7ab2d
   - enabled: 1
     path: Assets/Important/Scenes/EndCutScene.unity
     guid: 2c5053f3c8a417a41b15193f2ac90e03

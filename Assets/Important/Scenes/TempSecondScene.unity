@@ -613,182 +613,7 @@ PrefabInstance:
     - target: {fileID: 2254568922282646425, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
       propertyPath: m_Name
-      value: QuestManager1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[1].Key
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[2].Key
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[3].Key
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[4].Key
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[5].Key
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[6].Key
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[7].Key
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[8].Key
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[1].Value.title
-      value: TurnOffAirConditioning
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[2].Value.title
-      value: Turn On Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[3].Value.title
-      value: Equip Fire Extinguisher
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[4].Value.title
-      value: Equip Mask
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[5].Value.title
-      value: Be In Bathroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[6].Value.title
-      value: Fill With Water
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[7].Value.title
-      value: Gas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[8].Value.title
-      value: Fuse
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[1].Value.questObject
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[2].Value.questObject
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[3].Value.questObject
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[4].Value.questObject
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[5].Value.questObject
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[6].Value.questObject
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[7].Value.questObject
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[8].Value.questObject
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[0].Value.successRateReward
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[1].Value.successRateReward
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[2].Value.successRateReward
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[3].Value.successRateReward
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[5].Value.successRateReward
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[0].Value.questObjectiveRequirement
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[1].Value.questObjectiveRequirement
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[2].Value.questObjectiveRequirement
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[6].Value.questObjectiveRequirement
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785123473761345015, guid: 40030dec0a63643828e40ff4bd253a59,
-        type: 3}
-      propertyPath: questList._serializedList.Array.data[7].Value.questObjectiveRequirement
-      value: 1
+      value: QuestManager
       objectReference: {fileID: 0}
     - target: {fileID: 9121591221112849947, guid: 40030dec0a63643828e40ff4bd253a59,
         type: 3}
@@ -61205,7 +61030,7 @@ PrefabInstance:
     - target: {fileID: 8900836785066121786, guid: dbd97fa38d2013d4aa905ccb0b5ef347,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61218,6 +61043,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1562996296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1562996298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1735796103296679099, guid: dbd97fa38d2013d4aa905ccb0b5ef347,
+    type: 3}
+  m_PrefabInstance: {fileID: 1562996296}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1588588378
 GameObject:
   m_ObjectHideFlags: 0
@@ -110616,7 +110453,7 @@ PrefabInstance:
     - target: {fileID: 3659592533268256764, guid: a827c76bf25307f4cb9317cacde7fb7f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4264461609442586335, guid: a827c76bf25307f4cb9317cacde7fb7f,
         type: 3}
@@ -110753,18 +110590,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a827c76bf25307f4cb9317cacde7fb7f, type: 3}
---- !u!114 &1869097285 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5861904111380312445, guid: a827c76bf25307f4cb9317cacde7fb7f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869097284}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1871258914
 GameObject:
   m_ObjectHideFlags: 0
@@ -115781,10 +115606,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1930679057}
   fade: {fileID: 1930679056}
-  timerText: {fileID: 1869097285}
+  timerText: {fileID: 1562996298}
   popUpText: {fileID: 360605318}
   timeRemaining: 120
-  secondPart: 0
+  secondPart: 1
 --- !u!1 &1965120744
 GameObject:
   m_ObjectHideFlags: 0

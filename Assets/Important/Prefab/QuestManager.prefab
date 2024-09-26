@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8785123473761345015}
   m_Layer: 0
   m_Name: QuestManager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,77 +52,61 @@ MonoBehaviour:
         questObject: 1
         progress: 0
         nextQuest: 0
-        questObjectiveRequirement: 3
-        successRateReward: 3
+        questObjectiveRequirement: 5
+        successRateReward: 20
     - Key: 1
-      Value:
-        title: Inflammable
-        questObject: 0
-        progress: 0
-        nextQuest: 0
-        questObjectiveRequirement: 2
-        successRateReward: 5
-    - Key: 2
       Value:
         title: TurnOffAirConditioning
         questObject: 2
         progress: 0
         nextQuest: 0
         questObjectiveRequirement: 1
-        successRateReward: 10
-    - Key: 3
+        successRateReward: 15
+    - Key: 2
       Value:
         title: Turn On Light
         questObject: 3
         progress: 0
         nextQuest: 0
-        questObjectiveRequirement: 1
-        successRateReward: 2
-    - Key: 4
+        questObjectiveRequirement: 3
+        successRateReward: 4
+    - Key: 3
       Value:
         title: Equip Fire Extinguisher
         questObject: 5
         progress: 0
         nextQuest: 0
         questObjectiveRequirement: 1
-        successRateReward: 1
-    - Key: 5
+        successRateReward: 8
+    - Key: 4
       Value:
         title: Equip Mask
         questObject: 4
         progress: 0
         nextQuest: 0
         questObjectiveRequirement: 1
-        successRateReward: 1
-    - Key: 6
+        successRateReward: 13
+    - Key: 5
       Value:
         title: Be In Bathroom
         questObject: 7
         progress: 0
         nextQuest: 0
         questObjectiveRequirement: 1
-        successRateReward: 25
-    - Key: 7
+        successRateReward: 18
+    - Key: 6
       Value:
         title: Fill With Water
         questObject: 6
         progress: 0
         nextQuest: 0
-        questObjectiveRequirement: 2
-        successRateReward: 25
-    - Key: 8
+        questObjectiveRequirement: 3
+        successRateReward: 4
+    - Key: 7
       Value:
         title: Gas
         questObject: 8
         progress: 0
         nextQuest: 0
         questObjectiveRequirement: 1
-        successRateReward: 25
-    - Key: 9
-      Value:
-        title: Fuse
-        questObject: 9
-        progress: 0
-        nextQuest: 0
-        questObjectiveRequirement: 1
-        successRateReward: 25
+        successRateReward: 18

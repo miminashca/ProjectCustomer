@@ -13,6 +13,7 @@ TagManager:
   - Bath
   - PlayerHead
   - Level
+  - Manager
   layers:
   - Default
   - TransparentFX
