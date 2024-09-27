@@ -115628,7 +115628,7 @@ MonoBehaviour:
   fade: {fileID: 1930679056}
   timerText: {fileID: 1562996298}
   popUpText: {fileID: 360605318}
-  timeRemaining: 120
+  timeRemaining: 5
   secondPart: 1
 --- !u!1 &1965120744
 GameObject:
