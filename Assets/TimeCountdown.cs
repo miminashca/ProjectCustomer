@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Linq;
 
 public class TimeCountdown : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class TimeCountdown : MonoBehaviour
     [NonSerialized] public bool leftRoom;
 
     [SerializeField] private bool secondPart;
+    
     // Start is called before the first frame update
     void Start()
     {
