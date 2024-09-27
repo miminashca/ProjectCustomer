@@ -8,6 +8,8 @@ public class Switch : MonoBehaviour
    public bool isOn = false;
    private float treshold = 1.5f;
    private float timer = 1.5f;
+
+    [SerializeField] private bool turnOffOnStart;
    
    
    [NonSerialized] public QuestManager.TargetObject questObject;
@@ -16,7 +18,19 @@ public class Switch : MonoBehaviour
    public static event Action OnLightActivate;
    [SerializeField] private AudioSource soundOn;
    [SerializeField] private AudioSource soundOff;
-   private void OnTriggerEnter(Collider other)
+
+    private void Start()
+    {
+        if (turnOffOnStart)
+        {
+            isOn = !isOn;
+            OnLightActivate?.Invoke();
+
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
    {
       if (other.gameObject.tag == "PlayerHand" && timer>=treshold)
       {

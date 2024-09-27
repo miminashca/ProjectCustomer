@@ -6,16 +6,25 @@ public class Lighting : QuestObject
 {
     private Light lightSource;
     private Switch lightSwitch;
+
+    private void Awake()
+    {
+        lightSource = GetComponentInChildren<Light>();
+        lightSwitch = GetComponentInChildren<Switch>();
+        if(lightSwitch != null && !lightSwitch.isOn)
+        {
+            lightSource.enabled = false;
+        }
+    }
     private void Start()
     {
         questObject = QuestManager.TargetObject.Light;
         questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
 
-        lightSource = GetComponentInChildren<Light>();
-        lightSwitch = GetComponentInChildren<Switch>();
+
 
         lightSwitch.questObject = questObject;
-        lightSource.enabled = false;
+
 
         Switch.OnLightActivate += AddProgress;
     }
