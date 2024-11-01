@@ -19,6 +19,7 @@ public class TextHandler : MonoBehaviour
 
     private bool textVisible;
 
+    [SerializeField] bool finalscene;
     void Start()
     {
         foreach (var text in texts)
@@ -63,10 +64,17 @@ public class TextHandler : MonoBehaviour
             textVisible = true;
            
         }
-        
-        if(texts.Length < currentTextID)
+
+        if (texts.Length < currentTextID)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+            if (finalscene)
+            {
+                SceneManager.LoadScene(1);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }   
     }
 }

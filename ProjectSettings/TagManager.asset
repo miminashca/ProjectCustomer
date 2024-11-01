@@ -11,6 +11,10 @@ TagManager:
   - Couch
   - Sink
   - Bath
+  - PlayerHead
+  - Level
+  - Manager
+  - Fire
   layers:
   - Default
   - TransparentFX

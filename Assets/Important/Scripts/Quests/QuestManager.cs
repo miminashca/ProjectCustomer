@@ -42,7 +42,8 @@ public class QuestManager : MonoBehaviour
         }
         else if (questManager != this)
         {
-            Destroy(gameObject);
+            Destroy(questManager.gameObject);
+            questManager = this;
         }
         
         DontDestroyOnLoad(gameObject);

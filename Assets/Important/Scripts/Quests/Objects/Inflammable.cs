@@ -13,7 +13,7 @@ public class Inflammable : QuestObject
     private void Start()
     {
         questObject = QuestManager.TargetObject.Inflammable;
-        if(QuestManager.questManager.FindIDbyTargetObject(questObject) >= 0) questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
+        questID = QuestManager.questManager.FindIDbyTargetObject(questObject);
     }
 
     private void OnTriggerExit(Collider other)

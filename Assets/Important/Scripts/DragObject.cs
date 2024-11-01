@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DragObject : MonoBehaviour
 {
@@ -10,7 +11,19 @@ public class DragObject : MonoBehaviour
     private Rigidbody rb;
     private bool isDragging = false;
 
+    float Leftgripvalue;
+    float Rightgripvalue;
     private bool inTrigger = false;
+
+    [SerializeField] private InputActionProperty leftGrip;
+    [SerializeField] private InputActionProperty rightGrip;
+    
+    private enum CurrentHand
+    {
+        LEFT,
+        RIGHT
+    }
+    private CurrentHand currentHand;
 
     void Start()
     {
@@ -19,11 +32,27 @@ public class DragObject : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (inTrigger && Input.GetKeyDown(KeyCode.G))
+        //start dragging
+        if (inTrigger)
         {
-            StartDragging();
+            if (Leftgripvalue > .8)
+            {
+                currentHand = CurrentHand.LEFT;
+                StartDragging();
+            }
+            else if (Rightgripvalue > .8)
+            {
+                currentHand = CurrentHand.RIGHT;
+                StartDragging();
+            }
         }
-        if (Input.GetKeyUp(KeyCode.G))
+
+        //stop dragging
+        if (currentHand == CurrentHand.LEFT && Leftgripvalue < .1)
+        { 
+            StopDragging();
+        }
+        else if (currentHand == CurrentHand.RIGHT && Rightgripvalue < .1)
         { 
             StopDragging();
         }
@@ -70,5 +99,14 @@ public class DragObject : MonoBehaviour
         {
             inTrigger = false;
         }
+    }
+
+    private void Update()
+    {
+        Leftgripvalue = leftGrip.action.ReadValue<float>();
+        Rightgripvalue = rightGrip.action.ReadValue<float>();
+
+        Debug.Log(Leftgripvalue);
+        Debug.Log(Rightgripvalue);
     }
 }
